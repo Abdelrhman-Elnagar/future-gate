@@ -3,64 +3,42 @@
 namespace App\Http\Controllers;
 
 use App\Models\Faculty;
+use Illuminate\Http\Request;
 use App\Http\Requests\StoreFacultyRequest;
 use App\Http\Requests\UpdateFacultyRequest;
 
 class FacultyController extends Controller
+
 {
-    /**
-     * Display a listing of the resource.
-     */
+    // Get all faculties
     public function index()
     {
-        //
+        return response()->json(Faculty::with('university')->get());
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    // Get a single faculty by ID
+    public function show($id)
     {
-        //
+        $faculty = Faculty::with('university')->find($id);
+        if (!$faculty) {
+            return response()->json(['message' => 'Faculty not found'], 404);
+        }
+        return response()->json($faculty);
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
-    public function store(StoreFacultyRequest $request)
+    // Filter faculties by track or university
+    public function filter(Request $request)
     {
-        //
-    }
+        $query = Faculty::query();
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(Faculty $faculty)
-    {
-        //
-    }
+        if ($request->has('track')) {
+            $query->where('track', $request->track);
+        }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(Faculty $faculty)
-    {
-        //
-    }
+        if ($request->has('university_id')) {
+            $query->where('university_id', $request->university_id);
+        }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(UpdateFacultyRequest $request, Faculty $faculty)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(Faculty $faculty)
-    {
-        //
+        return response()->json($query->with('university')->get());
     }
 }

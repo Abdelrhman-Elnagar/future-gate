@@ -26,6 +26,6 @@ class University extends Model
     // Define relationship with faculties
     public function faculties()
     {
-        // return $this->hasMany(Faculty::class);
+        return $this->hasMany(Faculty::class);
     }
 }

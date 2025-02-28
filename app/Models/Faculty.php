@@ -7,6 +7,23 @@ use Illuminate\Database\Eloquent\Model;
 
 class Faculty extends Model
 {
-    /** @use HasFactory<\Database\Factories\FacultyFactory> */
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+        'university_id',
+        'track',
+        'description',
+        'duration',
+        'requirements',
+        'ranking',
+        'address',
+        'website',
+        'logo'
+    ];
+
+    public function university()
+    {
+        return $this->belongsTo(University::class);
+    }
 }
