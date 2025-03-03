@@ -26,4 +26,9 @@ class Faculty extends Model
     {
         return $this->belongsTo(University::class);
     }
+
+    public function grades()
+    {
+        return $this->hasMany(FacultyGrade::class);
+    }
 }

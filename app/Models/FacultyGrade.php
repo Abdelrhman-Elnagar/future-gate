@@ -9,4 +9,11 @@ class FacultyGrade extends Model
 {
     /** @use HasFactory<\Database\Factories\FacultyGradeFactory> */
     use HasFactory;
+
+    protected $fillable = ['faculty_id', 'study_track', 'minimum_grade'];
+
+    public function faculty()
+    {
+        return $this->belongsTo(Faculty::class);
+    }
 }

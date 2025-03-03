@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('faculty_grades', function (Blueprint $table) {
+        Schema::create('student_subjects', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('faculty_id')->constrained()->onDelete('cascade'); // Each grade belongs to a faculty
-            $table->enum('study_track', ['علمي علوم', 'علمي رياضة', 'أدبي']); // Study track
-            $table->decimal('minimum_grade', 5, 2); // Example: 387.0
+            $table->foreignId('student_id')->constrained('students')->onDelete('cascade');
+            $table->foreignId('subject_id')->constrained('subjects')->onDelete('cascade');
+            $table->decimal('grade', 5, 2); // Grade for the subject
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('faculty_grades');
+        Schema::dropIfExists('student_subjects');
     }
 };

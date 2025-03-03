@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('name');
             $table->foreignId('university_id')->constrained()->onDelete('cascade'); // University Relation
             $table->text('description')->nullable(); // Faculty Description
-            $table->text('requirements')->nullable(); // متطلبات الكلية like بطاقة, جند
             $table->integer('duration')->default(4); // Years of Study
             $table->text('requirements')->nullable(); // Admission Requirements
             $table->integer('ranking')->nullable(); // Optional Faculty Ranking
