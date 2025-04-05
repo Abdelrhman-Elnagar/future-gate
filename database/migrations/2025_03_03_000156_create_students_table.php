@@ -22,6 +22,7 @@ return new class extends Migration
             $table->foreignId('specialization_id')->constrained('specializations')->onDelete('cascade');
             $table->string('phone_number')->nullable();
             $table->string('national_id')->nullable();
+            $table->enum('gender', ['ذكر', 'أنثى'])->default('ذكر');
             $table->date('date_of_birth')->nullable();
             $table->text('address')->nullable();
             $table->timestamps();

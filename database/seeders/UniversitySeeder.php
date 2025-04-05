@@ -14,8 +14,8 @@ class UniversitySeeder extends Seeder
     {
         $universities = [
             [
-                'name' => 'Cairo University',
-                'location' => 'Cairo',
+                'name' => 'جامعة القاهرة',
+                'location' => 'القاهرة',
                 'website' => 'https://cu.edu.eg',
                 'logo' => 'logos/cairo_university.png', // Example path
                 'description' => "One of Egypt's oldest and most prestigious universities, established in 1908.",
@@ -26,8 +26,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 1, // Example ranking
             ],
             [
-                'name' => 'Ain Shams University',
-                'location' => 'Cairo',
+                'name' => 'جامعة عين شمس',
+                'location' => 'القاهرة',
                 'website' => 'https://www.asu.edu.eg',
                 'logo' => 'logos/ain_shams.png', // Example path
                 'description' => 'A leading university in Egypt, founded in 1950.',
@@ -38,8 +38,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 2, // Example ranking
             ],
             [
-                'name' => 'Alexandria University',
-                'location' => 'Alexandria',
+                'name' => 'جامعة الإسكندرية',
+                'location' => 'الإسكندرية',
                 'website' => 'https://alexu.edu.eg',
                 'logo' => 'logos/alexandria_university.png', // Example path
                 'description' => 'A major university in Alexandria, established in 1938.',
@@ -50,8 +50,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 3, // Example ranking
             ],
             [
-                'name' => 'Assiut University',
-                'location' => 'Assiut',
+                'name' => 'جامعة أسيوط',
+                'location' => 'أسيوط',
                 'website' => 'https://www.aun.edu.eg',
                 'logo' => 'logos/assiut_university.png', // Example path
                 'description' => 'A prominent university in Upper Egypt, founded in 1957.',
@@ -62,8 +62,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 4, // Example ranking
             ],
             [
-                'name' => 'Mansoura University',
-                'location' => 'Mansoura',
+                'name' => 'جامعة المنصورة',
+                'location' => 'المنصورة',
                 'website' => 'https://www.mans.edu.eg',
                 'logo' => 'logos/mansoura_university.png', // Example path
                 'description' => 'A leading university in the Nile Delta, established in 1972.',
@@ -74,8 +74,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 5, // Example ranking
             ],
             [
-                'name' => 'Zagazig University',
-                'location' => 'Zagazig',
+                'name' => 'جامعة الزقازيق',
+                'location' => 'الزقازيق',
                 'website' => 'https://www.zu.edu.eg',
                 'logo' => 'logos/zagazig_university.png', // Example path
                 'description' => 'A major university in the Sharqia Governorate, founded in 1974.',
@@ -86,8 +86,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 6, // Example ranking
             ],
             [
-                'name' => 'Helwan University',
-                'location' => 'Helwan',
+                'name' => 'جماعة حلوان',
+                'location' => 'حلوان',
                 'website' => 'https://www.helwan.edu.eg',
                 'logo' => 'logos/helwan_university.png', // Example path
                 'description' => 'A public university in Helwan, established in 1975.',
@@ -98,8 +98,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 7, // Example ranking
             ],
             [
-                'name' => 'Minia University',
-                'location' => 'Minia',
+                'name' => 'جامعة المنيا',
+                'location' => 'المنيا',
                 'website' => 'https://www.minia.edu.eg',
                 'logo' => 'logos/minia_university.png', // Example path
                 'description' => 'A university in Minia, founded in 1976.',
@@ -110,8 +110,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 8, // Example ranking
             ],
             [
-                'name' => 'Suez Canal University',
-                'location' => 'Ismailia',
+                'name' => 'جامعة قناة السويس',
+                'location' => 'الإسماعيلية',
                 'website' => 'https://www.suez.edu.eg',
                 'logo' => 'logos/suez_canal_university.png', // Example path
                 'description' => 'A university located near the Suez Canal, established in 1976.',
@@ -122,8 +122,8 @@ class UniversitySeeder extends Seeder
                 'ranking' => 9, // Example ranking
             ],
             [
-                'name' => 'Tanta University',
-                'location' => 'Tanta',
+                'name' => 'جامعة طنطا',
+                'location' => 'طنطا',
                 'website' => 'https://www.tanta.edu.eg',
                 'logo' => 'logos/tanta_university.png', // Example path
                 'description' => 'A university in Tanta, founded in 1972.',

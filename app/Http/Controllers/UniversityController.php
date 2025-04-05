@@ -15,7 +15,7 @@ class UniversityController extends Controller
     public function index()
     {
     {
-        return response()->json(University::all());
+            return response()->json(University::all());
     }
 }
 

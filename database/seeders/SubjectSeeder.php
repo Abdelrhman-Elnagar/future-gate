@@ -12,19 +12,19 @@ class SubjectSeeder extends Seeder
     public function run(): void
     {
         $subjects = [
-            ['name' => 'Arabic Language', 'track' => 'general'],
-            ['name' => 'English Language', 'track' => 'general'],
-            ['name' => 'Second Language', 'track' => 'general'],
-            ['name' => 'Physics', 'track' => 'scientific_math'],
-            ['name' => 'Chemistry', 'track' => 'scientific_science'],
-            ['name' => 'Biology', 'track' => 'scientific_science'],
-            ['name' => 'Geology', 'track' => 'scientific_science'],
-            ['name' => 'Pure Mathematics', 'track' => 'scientific_math'],
-            ['name' => 'Applied Mathematics', 'track' => 'scientific_math'],
-            ['name' => 'History', 'track' => 'literary'],
-            ['name' => 'Geography', 'track' => 'literary'],
-            ['name' => 'Philosophy', 'track' => 'literary'],
-            ['name' => 'Psychology', 'track' => 'literary'],
+            ['name' => 'اللغة العربية', 'track' => 'عام'],
+            ['name' => 'اللغة الإنجليزية', 'track' => 'عام'],
+            ['name' => 'اللغة الأجنبية الثانية', 'track' => 'عام'],
+            ['name' => 'الفيزياء', 'track' => 'علمى_رياضة'],
+            ['name' => 'الكيمياء', 'track' => 'علمى_علوم'],
+            ['name' => 'الأحياء', 'track' => 'علمى_علوم'],
+            ['name' => 'الجيولوجيا', 'track' => 'علمى_علوم'],
+            ['name' => 'الرياضيات البحتة', 'track' => 'علمى_رياضة'],
+            ['name' => 'الرياضيات التطبيقية', 'track' => 'علمى_رياضة'],
+            ['name' => 'التاريخ', 'track' => 'أدبى'],
+            ['name' => 'الجغرافيا', 'track' => 'أدبى'],
+            ['name' => 'الفلسفة', 'track' => 'أدبى'],
+            ['name' => 'علم النفس', 'track' => 'أدبى'],
         ];
 
         foreach ($subjects as $subject) {
