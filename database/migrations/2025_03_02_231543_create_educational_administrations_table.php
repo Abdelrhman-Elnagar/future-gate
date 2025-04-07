@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('educational_administrations', function (Blueprint $table) {
             $table->id();
             $table->string('name')->unique();
-            $table->foreignId('governorate_id')->constrained('governorates')->onDelete('cascade');
+            $table->foreignId('governate_id')->constrained('governates')->onDelete('cascade');
             $table->timestamps();
         });
     }

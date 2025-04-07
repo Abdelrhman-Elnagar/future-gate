@@ -4,6 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\University; // Assuming you have a University model
+use Illuminate\Support\Facades\DB;
+
 
 class UniversitySeeder extends Seeder
 {
@@ -12,128 +14,133 @@ class UniversitySeeder extends Seeder
      */
     public function run(): void
     {
+        // Clear existing records
+        // DB::table('universities')->truncate();
+
         $universities = [
             [
                 'name' => 'جامعة القاهرة',
-                'location' => 'القاهرة',
+                'location' => 'https://goo.gl/maps/4S5Ma7o5umr5c3FG7',
                 'website' => 'https://cu.edu.eg',
-                'logo' => 'logos/cairo_university.png', // Example path
-                'description' => "One of Egypt's oldest and most prestigious universities, established in 1908.",
+                'logo' => 'logos/cairo_university.png',
+                'description' => 'إحدى أقدم وأعرق الجامعات في مصر، تأسست عام 1908.',
                 'established_year' => 1908,
                 'email' => 'info@cu.edu.eg',
                 'phone' => '+20235676100',
-                'address' => 'Giza, Egypt',
-                'ranking' => 1, // Example ranking
+                'address' => 'الجيزة، مصر',
+                'ranking' => 1,
             ],
             [
                 'name' => 'جامعة عين شمس',
-                'location' => 'القاهرة',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
                 'website' => 'https://www.asu.edu.eg',
-                'logo' => 'logos/ain_shams.png', // Example path
-                'description' => 'A leading university in Egypt, founded in 1950.',
+                'logo' => 'logos/ain_shams.png',
+                'description' => 'جامعة رائدة في مصر، تأسست عام 1950.',
                 'established_year' => 1950,
                 'email' => 'info@asu.edu.eg',
                 'phone' => '+20226834222',
-                'address' => 'Cairo, Egypt',
-                'ranking' => 2, // Example ranking
+                'address' => 'القاهرة، مصر',
+                'ranking' => 2,
             ],
             [
                 'name' => 'جامعة الإسكندرية',
-                'location' => 'الإسكندرية',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
                 'website' => 'https://alexu.edu.eg',
-                'logo' => 'logos/alexandria_university.png', // Example path
-                'description' => 'A major university in Alexandria, established in 1938.',
+                'logo' => 'logos/alexandria_university.png',
+                'description' => 'جامعة كبرى في مدينة الإسكندرية، تأسست عام 1938.',
                 'established_year' => 1938,
                 'email' => 'info@alexu.edu.eg',
                 'phone' => '+2035921678',
-                'address' => 'Alexandria, Egypt',
-                'ranking' => 3, // Example ranking
+                'address' => 'الإسكندرية، مصر',
+                'ranking' => 3,
             ],
             [
                 'name' => 'جامعة أسيوط',
-                'location' => 'أسيوط',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
                 'website' => 'https://www.aun.edu.eg',
-                'logo' => 'logos/assiut_university.png', // Example path
-                'description' => 'A prominent university in Upper Egypt, founded in 1957.',
+                'logo' => 'logos/assiut_university.png',
+                'description' => 'جامعة بارزة في صعيد مصر، تأسست عام 1957.',
                 'established_year' => 1957,
                 'email' => 'info@aun.edu.eg',
                 'phone' => '+20882323200',
-                'address' => 'Assiut, Egypt',
-                'ranking' => 4, // Example ranking
+                'address' => 'أسيوط، مصر',
+                'ranking' => 4,
             ],
             [
                 'name' => 'جامعة المنصورة',
-                'location' => 'المنصورة',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
                 'website' => 'https://www.mans.edu.eg',
-                'logo' => 'logos/mansoura_university.png', // Example path
-                'description' => 'A leading university in the Nile Delta, established in 1972.',
+                'logo' => 'logos/mansoura_university.png',
+                'description' => 'جامعة رائدة في دلتا النيل، تأسست عام 1972.',
                 'established_year' => 1972,
                 'email' => 'info@mans.edu.eg',
                 'phone' => '+20502203833',
-                'address' => 'Mansoura, Egypt',
-                'ranking' => 5, // Example ranking
+                'address' => 'المنصورة، مصر',
+                'ranking' => 5,
             ],
             [
                 'name' => 'جامعة الزقازيق',
-                'location' => 'الزقازيق',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
                 'website' => 'https://www.zu.edu.eg',
-                'logo' => 'logos/zagazig_university.png', // Example path
-                'description' => 'A major university in the Sharqia Governorate, founded in 1974.',
+                'logo' => 'logos/zagazig_university.png',
+                'description' => 'جامعة كبرى بمحافظة الشرقية، تأسست عام 1974.',
                 'established_year' => 1974,
                 'email' => 'info@zu.edu.eg',
                 'phone' => '+20552230444',
-                'address' => 'Zagazig, Egypt',
-                'ranking' => 6, // Example ranking
+                'address' => 'الزقازيق، مصر',
+                'ranking' => 6,
             ],
             [
-                'name' => 'جماعة حلوان',
-                'location' => 'حلوان',
+                'name' => 'جامعة حلوان',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
                 'website' => 'https://www.helwan.edu.eg',
-                'logo' => 'logos/helwan_university.png', // Example path
-                'description' => 'A public university in Helwan, established in 1975.',
+                'logo' => 'logos/helwan_university.png',
+                'description' => 'جامعة حكومية في مدينة حلوان، تأسست عام 1975.',
                 'established_year' => 1975,
                 'email' => 'info@helwan.edu.eg',
                 'phone' => '+20225580000',
-                'address' => 'Helwan, Egypt',
-                'ranking' => 7, // Example ranking
+                'address' => 'حلوان، مصر',
+                'ranking' => 7,
             ],
             [
                 'name' => 'جامعة المنيا',
-                'location' => 'المنيا',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
                 'website' => 'https://www.minia.edu.eg',
-                'logo' => 'logos/minia_university.png', // Example path
-                'description' => 'A university in Minia, founded in 1976.',
+                'logo' => 'logos/minia_university.png',
+                'description' => 'جامعة في محافظة المنيا، تأسست عام 1976.',
                 'established_year' => 1976,
                 'email' => 'info@minia.edu.eg',
                 'phone' => '+20862332000',
-                'address' => 'Minia, Egypt',
-                'ranking' => 8, // Example ranking
+                'address' => 'المنيا، مصر',
+                'ranking' => 8,
             ],
             [
                 'name' => 'جامعة قناة السويس',
-                'location' => 'الإسماعيلية',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
                 'website' => 'https://www.suez.edu.eg',
-                'logo' => 'logos/suez_canal_university.png', // Example path
-                'description' => 'A university located near the Suez Canal, established in 1976.',
+                'logo' => 'logos/suez_canal_university.png',
+                'description' => 'جامعة تقع بالقرب من قناة السويس، تأسست عام 1976.',
                 'established_year' => 1976,
                 'email' => 'info@suez.edu.eg',
                 'phone' => '+20643220000',
-                'address' => 'Ismailia, Egypt',
-                'ranking' => 9, // Example ranking
+                'address' => 'الإسماعيلية، مصر',
+                'ranking' => 9,
             ],
             [
                 'name' => 'جامعة طنطا',
-                'location' => 'طنطا',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
                 'website' => 'https://www.tanta.edu.eg',
-                'logo' => 'logos/tanta_university.png', // Example path
-                'description' => 'A university in Tanta, founded in 1972.',
+                'logo' => 'logos/tanta_university.png',
+                'description' => 'جامعة في مدينة طنطا، تأسست عام 1972.',
                 'established_year' => 1972,
                 'email' => 'info@tanta.edu.eg',
                 'phone' => '+20403310000',
-                'address' => 'Tanta, Egypt',
-                'ranking' => 10, // Example ranking
+                'address' => 'طنطا، مصر',
+                'ranking' => 10,
             ],
         ];
+
+
 
         foreach ($universities as $university) {
             University::create($university);
