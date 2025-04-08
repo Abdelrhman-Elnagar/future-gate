@@ -20,8 +20,8 @@ class UniversitySeeder extends Seeder
         $universities = [
             [
                 'name' => 'جامعة القاهرة',
-                'location' => 'https://goo.gl/maps/4S5Ma7o5umr5c3FG7',
                 'website' => 'https://cu.edu.eg',
+                'location' => 'https://goo.gl/maps/4S5Ma7o5umr5c3FG7',
                 'logo' => 'logos/cairo_university.png',
                 'description' => 'إحدى أقدم وأعرق الجامعات في مصر، تأسست عام 1908.',
                 'established_year' => 1908,
@@ -32,8 +32,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة عين شمس',
-                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
                 'website' => 'https://www.asu.edu.eg',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
                 'logo' => 'logos/ain_shams.png',
                 'description' => 'جامعة رائدة في مصر، تأسست عام 1950.',
                 'established_year' => 1950,
@@ -44,8 +44,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة الإسكندرية',
-                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
                 'website' => 'https://alexu.edu.eg',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
                 'logo' => 'logos/alexandria_university.png',
                 'description' => 'جامعة كبرى في مدينة الإسكندرية، تأسست عام 1938.',
                 'established_year' => 1938,
@@ -56,8 +56,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة أسيوط',
-                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
                 'website' => 'https://www.aun.edu.eg',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
                 'logo' => 'logos/assiut_university.png',
                 'description' => 'جامعة بارزة في صعيد مصر، تأسست عام 1957.',
                 'established_year' => 1957,
@@ -68,8 +68,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة المنصورة',
-                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
                 'website' => 'https://www.mans.edu.eg',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
                 'logo' => 'logos/mansoura_university.png',
                 'description' => 'جامعة رائدة في دلتا النيل، تأسست عام 1972.',
                 'established_year' => 1972,
@@ -80,8 +80,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة الزقازيق',
-                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
                 'website' => 'https://www.zu.edu.eg',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
                 'logo' => 'logos/zagazig_university.png',
                 'description' => 'جامعة كبرى بمحافظة الشرقية، تأسست عام 1974.',
                 'established_year' => 1974,
@@ -92,8 +92,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة حلوان',
-                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
                 'website' => 'https://www.helwan.edu.eg',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
                 'logo' => 'logos/helwan_university.png',
                 'description' => 'جامعة حكومية في مدينة حلوان، تأسست عام 1975.',
                 'established_year' => 1975,
@@ -104,8 +104,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة المنيا',
-                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
                 'website' => 'https://www.minia.edu.eg',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
                 'logo' => 'logos/minia_university.png',
                 'description' => 'جامعة في محافظة المنيا، تأسست عام 1976.',
                 'established_year' => 1976,
@@ -116,8 +116,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة قناة السويس',
-                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
                 'website' => 'https://www.suez.edu.eg',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
                 'logo' => 'logos/suez_canal_university.png',
                 'description' => 'جامعة تقع بالقرب من قناة السويس، تأسست عام 1976.',
                 'established_year' => 1976,
@@ -128,8 +128,8 @@ class UniversitySeeder extends Seeder
             ],
             [
                 'name' => 'جامعة طنطا',
-                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
                 'website' => 'https://www.tanta.edu.eg',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
                 'logo' => 'logos/tanta_university.png',
                 'description' => 'جامعة في مدينة طنطا، تأسست عام 1972.',
                 'established_year' => 1972,

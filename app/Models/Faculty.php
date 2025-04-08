@@ -12,10 +12,10 @@ class Faculty extends Model
     protected $fillable = [
         'name',
         'university_id',
-        'track',
         'description',
         'duration',
         'requirements',
+        'location',
         'ranking',
         'address',
         'website',
