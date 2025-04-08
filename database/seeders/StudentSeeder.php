@@ -2,21 +2,16 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Student;
+use App\Models\User;
 use App\Models\Governate;
 use App\Models\EducationalAdministration;
 use App\Models\School;
 use App\Models\Specialization;
-use App\Imports\StudentsImport;
-use Maatwebsite\Excel\Facades\Excel;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Str;
-use App\Models\User;
 use App\Models\Subject;
-use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Log;
+use Maatwebsite\Excel\Facades\Excel;
 
 class StudentSeeder extends Seeder
 {
@@ -26,21 +21,28 @@ class StudentSeeder extends Seeder
         $students = Excel::toCollection(null, storage_path('app/public/students.xlsx'))[0]->skip(1);
 
         foreach ($students as $studentData) {
-            // try {
-                $studentData = $studentData->toArray(); // مهم عشان تقدر تستخدم keys
+            try {
+                // Convert to array to access keys properly
+                $studentData = $studentData->toArray();
+
+                // Ensure that all required keys exist
+                if (!isset($studentData['الاسم']) || !isset($studentData['البريد الإلكتروني'])) {
+                    Log::warning("Missing required fields for student: " . json_encode($studentData));
+                    continue; // Skip this student if necessary fields are missing
+                }
 
                 // Create the user (student)
                 $user = User::create([
-                    'name' => $studentData['الاسم'],
-                    'email' => $studentData['البريد الإلكتروني'],
+                    'name' => $studentData['الاسم'] ?? 'Unknown',
+                    'email' => $studentData['البريد الإلكتروني'] ?? 'noemail@example.com',
                     'password' => Hash::make('student123'),
-                    'seat_number' => $studentData['رقم الجلوس'],
-                    'grade' => $studentData['الدرجة'],
-                    'phone_number' => $studentData['رقم الهاتف'],
-                    'national_id' => $studentData['الرقم القومى'],
-                    'gender' => $studentData['الجنس'],
-                    'date_of_birth' => $studentData['تاريخ الميلاد'],
-                    'address' => $studentData['عنوان السكن'],
+                    'seat_number' => $studentData['رقم الجلوس'] ?? null,
+                    'grade' => $studentData['الدرجة'] ?? null,
+                    'phone_number' => $studentData['رقم الهاتف'] ?? null,
+                    'national_id' => $studentData['الرقم القومى'] ?? null,
+                    'gender' => $studentData['الجنس'] ?? null,
+                    'date_of_birth' => $studentData['تاريخ الميلاد'] ?? null,
+                    'address' => $studentData['عنوان السكن'] ?? null,
                     'governorate_id' => $this->getGovernorateId($studentData['المحافظة']),
                     'educational_administration_id' => $this->getEducationalAdministrationId($studentData['الإدارة التعليمية']),
                     'school_id' => $this->getSchoolId($studentData['المدرسة']),
@@ -49,10 +51,10 @@ class StudentSeeder extends Seeder
 
                 // Assign subjects after the user is created
                 $this->assignSubjects($user, $studentData);
-            // } catch (\Throwable $e) {
-            //     // Log the error if something goes wrong
-            //     Log::error("❌ Failed to import student: " . json_encode($studentData) . " | Error: " . $e->getMessage());
-            // }
+            } catch (\Throwable $e) {
+                // Log the error if something goes wrong
+                Log::error("❌ Failed to import student: " . json_encode($studentData) . " | Error: " . $e->getMessage());
+            }
         }
     }
 
@@ -100,13 +102,13 @@ class StudentSeeder extends Seeder
                     $subjects[] = $this->getSubjectId($subject);
                 }
             }
-        } elseif ($spec === 'علمى علوم') {
+        } elseif ($spec === 'علمي علوم') {
             foreach (['الفيزياء', 'الكيمياء', 'الأحياء', 'الجيولوجيا'] as $subject) {
                 if (!empty($studentData[$subject])) {
                     $subjects[] = $this->getSubjectId($subject);
                 }
             }
-        } elseif ($spec === 'أدبى') {
+        } elseif ($spec === 'أدبي') {
             foreach (['التاريخ', 'الجغرافيا', 'الفلسفة', 'علم النفس'] as $subject) {
                 if (!empty($studentData[$subject])) {
                     $subjects[] = $this->getSubjectId($subject);
