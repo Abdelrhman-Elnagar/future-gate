@@ -15,24 +15,21 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
-            $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            // $table->enum('role', ['admin', 'student', 'teacher'])->default('student'); // Add this line
-
             $table->unsignedInteger('seat_number')->unique();
-            // $table->foreignId('user_id')->constrained('users')->onDelete('cascade');
             $table->decimal('grade', 5, 2); // Overall grade
-            $table->decimal('percentage', 5, 2)->nullable();
-            $table->foreignId('governorate_id')->constrained('governorates')->onDelete('cascade');
-            $table->foreignId('educational_administration_id')->constrained('educational_administrations')->onDelete('cascade');
-            $table->foreignId('school_id')->constrained('schools')->onDelete('cascade');
-            $table->foreignId('specialization_id')->constrained('specializations')->onDelete('cascade');
             $table->string('phone_number')->unique();
             $table->string('national_id')->unique();
             $table->enum('gender', ['ذكر', 'أنثى'])->default('ذكر');
             $table->date('date_of_birth')->nullable();
             $table->text('address')->nullable();
+            $table->text('percentage')->nullable();
+            $table->foreignId('governorate_id')->constrained('governorates')->onDelete('cascade');
+            $table->foreignId('educational_administration_id')->constrained('educational_administrations')->onDelete('cascade');
+            $table->foreignId('school_id')->constrained('schools')->onDelete('cascade');
+            $table->foreignId('specialization_id')->constrained('specializations')->onDelete('cascade');
 
+            $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });

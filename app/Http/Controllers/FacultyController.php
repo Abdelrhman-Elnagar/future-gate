@@ -10,19 +10,22 @@ use App\Http\Requests\UpdateFacultyRequest;
 class FacultyController extends Controller
 
 {
-    // Get all faculties
+    // Fetch all faculties
     public function index()
     {
-        return response()->json(Faculty::with('university')->get());
+        $faculties = Faculty::all();
+        return response()->json($faculties);
     }
 
-    // Get a single faculty by ID
+    // Fetch a specific faculty by ID
     public function show($id)
     {
-        $faculty = Faculty::with('university')->find($id);
+        $faculty = Faculty::find($id);
+
         if (!$faculty) {
             return response()->json(['message' => 'Faculty not found'], 404);
         }
+
         return response()->json($faculty);
     }
 
@@ -31,14 +34,28 @@ class FacultyController extends Controller
     {
         $query = Faculty::query();
 
+        // Normalize input track
         if ($request->has('track')) {
-            $query->where('track', $request->track);
+            $track = $request->input('track');
+            $normalizedTrack = mb_convert_encoding($track, 'UTF-8', 'auto');  // Ensure UTF-8 encoding
+
+            $query->join('faculty_grades', 'faculties.id', '=', 'faculty_grades.faculty_id')
+                ->where('faculty_grades.study_track', 'LIKE', "%$normalizedTrack%");
         }
 
-        if ($request->has('university_id')) {
-            $query->where('university_id', $request->university_id);
+        // Optionally, filter by university if provided
+        if ($request->has('university')) {
+            $university = $request->input('university');
+            $query->where('faculties.university_id', $university);
         }
 
-        return response()->json($query->with('university')->get());
+        // Get the filtered results
+        $faculties = $query->select('faculties.*')->distinct()->get();
+
+        if ($faculties->isEmpty()) {
+            return response()->json(['message' => 'Faculty not found'], 404);
+        }
+
+        return response()->json($faculties);
     }
 }

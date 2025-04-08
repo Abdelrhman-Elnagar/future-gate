@@ -19,7 +19,7 @@ class FacultySeeder extends Seeder
     public function run(): void
 
     {
-        DB::table('faculties')->truncate();
+        // DB::table('faculties')->truncate();
 
         // Faculties data
         $faculties = [
@@ -34,8 +34,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية 5372066، مصر',
                 'website' => 'https://www.alexu.edu.eg/index.php/ar/',
-                'location' => 'https://maps.app.goo.gl/jVV4u3DjUwKaeM8g6',
-                'logo' => 'logos/alex_medicine.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 388.0],
                 ],
@@ -53,8 +53,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع سوتر، الشاطبي، الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/KLeUHeZQVL9tf6cWA',
-                'logo' => 'logos/alex_economics_politics.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 358.5],
                 ],
@@ -67,8 +67,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، العباسية، القاهرة',
                 'website' => 'https://alsun.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/N5QDsPpmAGwVx1F66',
-                'logo' => 'logos/ainshams_alsson.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 358.5],
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 348.0],
@@ -84,8 +84,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_alsun',
-                'logo' => 'logos/suez_alsun.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 351.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 331.5]
@@ -100,8 +100,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'العباسية، القاهرة',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/EzcrLGygSY8ZBoix7',
-                'logo' => 'logos/ainshams_media.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 349.0],
                 ],
@@ -114,8 +114,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنيا، محافظة المنيا، مصر',
                 'website' => 'https://www.menofia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/XYZ123',
-                'logo' => 'logos/alsun_menia.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 348.5],
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 339.5],
@@ -130,8 +130,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، محافظة القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/XYZ102',
-                'logo' => 'logos/archaeology_asu.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 333.0],
                 ],
@@ -145,8 +145,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، محافظة القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/XYZ104',
-                'logo' => 'logos/education_asu.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 319.5],
                 ],
@@ -159,8 +159,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق الحرية، الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/jVV4u3DjUwKaeM8g6',
-                'logo' => 'logos/alex_education.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 318.5],
                 ],
@@ -173,8 +173,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنصورة، محافظة الدقهلية، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/xyz123',
-                'logo' => 'logos/mansoura_education.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 318.0],
                 ],
@@ -187,8 +187,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/def789',
-                'logo' => 'logos/helwan_fine_arts.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 316.0],
                 ],
@@ -201,8 +201,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة طنطا، محافظة الغربية، مصر',
                 'website' => 'https://www.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ghi101',
-                'logo' => 'logos/tanta_education.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 313.5],
                 ],
@@ -216,8 +216,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/pqr567',
-                'logo' => 'logos/ain_shams_arts.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 308.0],
                 ],
@@ -234,8 +234,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'عباس العقاد، مدينة نصر، القاهرة، مصر',
                 'website' => 'https://eng.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/FgP9dDndQu4zn7yx8',
-                'logo' => 'logos/ain_shams_engineering.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 373.5],
                 ],
@@ -248,8 +248,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنصورة، المنصورة، الدقهلية، مصر',
                 'website' => 'https://engfac.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/xjqHEUKoSehF5Qts6',
-                'logo' => 'logos/mansoura_engineering.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 374.0],
                 ],
@@ -262,8 +262,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الإسماعيلية، جامعة قناة السويس، مصر',
                 'website' => 'https://eng.suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/4U1LkNnp1mkXJZrA9',
-                'logo' => 'logos/suez_canal_engineering.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 372.5],
                 ],
@@ -276,8 +276,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة طنطا، الغربية، مصر',
                 'website' => 'https://eng.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/rdJUzVa5PWa3P5AE7',
-                'logo' => 'logos/tanta_engineering.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 370.0],
                 ],
@@ -291,8 +291,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع أبو قير، الشاطبي، الإسكندرية، مصر',
                 'website' => 'https://eng.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/UcNK2nVj5jvJzCQw7',
-                'logo' => 'logos/alex_engineering.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 369.0],
                 ],
@@ -305,8 +305,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة حلوان، القاهرة، مصر',
                 'website' => 'https://eng.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/7zEEuC8m6mByrkzA9',
-                'logo' => 'logos/helwan_engineering.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 367.5],
                 ],
@@ -319,8 +319,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة أسيوط، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/faculty-engineering/',
-                'location' => 'https://maps.app.goo.gl/QhzvZ3Zx53cXvXmp8',
-                'logo' => 'logos/assiut_engineering.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 364.0],
                 ],
@@ -333,8 +333,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنيا، محافظة المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/eng/',
-                'location' => 'https://maps.app.goo.gl/RKZh8UCbK2ANjYMr5',
-                'logo' => 'logos/minia_engineering.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 364.0],
                 ],
@@ -349,8 +349,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الإسماعيلية، جامعة قناة السويس، مصر',
                 'website' => 'https://pharm.suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/jR9iQG9BnyMBZ7r57',
-                'logo' => 'logos/suez_pharmacy.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 377.0],
                 ],
@@ -363,8 +363,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنيا، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/Pharmacy/',
-                'location' => 'https://maps.app.goo.gl/m1tGUyUohazv9F2q7',
-                'logo' => 'logos/minia_pharmacy.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 377.5],
                 ],
@@ -377,8 +377,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة أسيوط، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/pharmacy/',
-                'location' => 'https://maps.app.goo.gl/VsEMbmLDNB1dShkN9',
-                'logo' => 'logos/assiut_pharmacy.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 378.0],
                 ],
@@ -391,8 +391,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'عين حلوان، القاهرة، مصر',
                 'website' => 'https://pharmacy.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/d6T3C3FJvNiBozG19',
-                'logo' => 'logos/helwan_pharmacy.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 376.0],
                 ],
@@ -405,8 +405,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة طنطا، طنطا، الغربية، مصر',
                 'website' => 'https://pharmacy.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/Vy1v13L45CqJ9Yxp9',
-                'logo' => 'logos/tanta_pharmacy.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 377.5],
                 ],
@@ -419,8 +419,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع قنال المحمودية، الإسكندرية، مصر',
                 'website' => 'https://www.ph.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/LXRmUrCpHNozshRn6',
-                'logo' => 'logos/alex_pharmacy.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 377.0],
                 ],
@@ -433,8 +433,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'عبده باشا، العباسية، القاهرة، مصر',
                 'website' => 'https://pharm.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/KHTRdnS9EQxQjG6T9',
-                'logo' => 'logos/ainshams_pharmacy.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 376.5],
                 ],
@@ -447,8 +447,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، الدقهلية، مصر',
                 'website' => 'https://phfac.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/V5h6pD8JRB88RA1F9',
-                'logo' => 'logos/mansoura_pharmacy.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 378.5],
                 ],
@@ -463,8 +463,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_medicine',
-                'logo' => 'logos/suez_medicine.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 384.5]
                 ]
@@ -477,8 +477,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_dentistry',
-                'logo' => 'logos/suez_dentistry.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 381.0]
                 ]
@@ -491,8 +491,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_vet',
-                'logo' => 'logos/suez_vet.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 361.5]
                 ]
@@ -505,8 +505,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق المنيا الجديدة، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/minya_medicine',
-                'logo' => 'logos/minya_medicine.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 383.0]
                 ]
@@ -519,8 +519,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق المنيا الجديدة، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/minya_dentistry',
-                'logo' => 'logos/minya_dentistry.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 381.5]
                 ]
@@ -533,8 +533,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق المنيا الجديدة، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/minya_vet',
-                'logo' => 'logos/minya_vet.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 365.0]
                 ]
@@ -547,8 +547,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_medicine',
-                'logo' => 'logos/assuit_medicine.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 384.0]
                 ]
@@ -561,8 +561,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_dentistry',
-                'logo' => 'logos/assuit_dentistry.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 381.5]
                 ]
@@ -575,8 +575,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_vet',
-                'logo' => 'logos/assuit_vet.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 367.5]
                 ]
@@ -589,8 +589,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/helwan_medicine',
-                'logo' => 'logos/helwan_medicine.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 384.5]
                 ]
@@ -603,8 +603,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجيش، طنطا، الغربية، مصر',
                 'website' => 'https://www.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/tanta_medicine',
-                'logo' => 'logos/tanta_medicine.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 387.0]
                 ]
@@ -617,8 +617,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجيش، طنطا، الغربية، مصر',
                 'website' => 'https://www.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/tanta_dentistry',
-                'logo' => 'logos/tanta_dentistry.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 381.5]
                 ]
@@ -631,8 +631,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية 5372066، مصر',
                 'website' => 'https://www.alexu.edu.eg/index.php/ar/',
-                'location' => 'https://maps.app.goo.gl/jVV4u3DjUwKaeM8g6',
-                'logo' => 'logos/alex_medicine.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 388.0]
                 ]
@@ -645,8 +645,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_dentistry',
-                'logo' => 'logos/alex_dentistry.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 381.0]
                 ]
@@ -659,8 +659,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_vet',
-                'logo' => 'logos/alex_vet.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 364.0]
                 ]
@@ -673,8 +673,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ainshams_medicine',
-                'logo' => 'logos/ainshams_medicine.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 385.0]
                 ]
@@ -687,8 +687,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ainshams_dentistry',
-                'logo' => 'logos/ainshams_dentistry.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 381.0]
                 ]
@@ -701,8 +701,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ainshams_vet',
-                'logo' => 'logos/ainshams_vet.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 365.5]
                 ]
@@ -715,8 +715,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية 35516، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_medicine',
-                'logo' => 'logos/mansoura_medicine.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 390.0]
                 ]
@@ -729,8 +729,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_dentistry',
-                'logo' => 'logos/mansoura_dentistry.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 385.0]
                 ]
@@ -743,8 +743,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_vet',
-                'logo' => 'logos/mansoura_vet.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 371.5]
                 ]
@@ -760,8 +760,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_physicaltherapy',
-                'logo' => 'logos/suez_physicaltherapy.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 378.5]
                 ]
@@ -774,8 +774,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_nursing',
-                'logo' => 'logos/suez_nursing.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 353.0]
                 ]
@@ -788,8 +788,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_technursing',
-                'logo' => 'logos/suez_technursing.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 318.5]
                 ]
@@ -802,8 +802,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق المنيا الجديدة، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/minya_nursing',
-                'logo' => 'logos/minya_nursing.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 345.5]
                 ]
@@ -816,8 +816,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق المنيا الجديدة، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/minya_technursing',
-                'logo' => 'logos/minya_technursing.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 317.0]
                 ]
@@ -830,8 +830,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_nursing',
-                'logo' => 'logos/assuit_nursing.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 348.5]
                 ]
@@ -844,8 +844,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_technursing',
-                'logo' => 'logos/assuit_technursing.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 321.5]
                 ]
@@ -858,8 +858,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/helwan_nursing',
-                'logo' => 'logos/helwan_nursing.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 349.0]
                 ]
@@ -872,8 +872,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/helwan_technursing',
-                'logo' => 'logos/helwan_technursing.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 313.0]
                 ]
@@ -886,8 +886,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجيش، طنطا، الغربية، مصر',
                 'website' => 'https://www.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/tanta_nursing',
-                'logo' => 'logos/tanta_nursing.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 357.5]
                 ]
@@ -900,8 +900,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجيش، طنطا، الغربية، مصر',
                 'website' => 'https://www.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/tanta_technursing',
-                'logo' => 'logos/tanta_technursing.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 328.5]
                 ]
@@ -914,8 +914,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية 5372066، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_nursing',
-                'logo' => 'logos/alex_nursing.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 349.5]
                 ]
@@ -928,8 +928,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_technursing',
-                'logo' => 'logos/alex_technursing.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 322.5]
                 ]
@@ -942,8 +942,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ainshams_nursing',
-                'logo' => 'logos/ainshams_nursing.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 350.0]
                 ]
@@ -956,8 +956,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ainshams_technursing',
-                'logo' => 'logos/ainshams_technursing.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 314.0]
                 ]
@@ -970,8 +970,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية 35516، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_nursing',
-                'logo' => 'logos/mansoura_nursing.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 361.5]
                 ]
@@ -984,8 +984,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_technursing',
-                'logo' => 'logos/mansoura_technursing.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 329.0]
                 ]
@@ -1002,8 +1002,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_computers',
-                'logo' => 'logos/suez_computers.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 367.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 352.5]
@@ -1017,8 +1017,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق المنيا الجديدة، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/minya_computers',
-                'logo' => 'logos/minya_computers.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 371.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 343.0]
@@ -1032,8 +1032,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_computers',
-                'logo' => 'logos/assuit_computers.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 372.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 342.5]
@@ -1047,8 +1047,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/helwan_computers_ai',
-                'logo' => 'logos/helwan_computers_ai.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 365.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 351.5]
@@ -1062,8 +1062,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجيش، طنطا، الغربية، مصر',
                 'website' => 'https://www.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/tanta_computers',
-                'logo' => 'logos/tanta_computers.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 368.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 353.5]
@@ -1077,8 +1077,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية 5372066، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_computers_data',
-                'logo' => 'logos/alex_computers_data.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 366.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 357.0]
@@ -1092,8 +1092,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ainshams_computers',
-                'logo' => 'logos/ainshams_computers.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 367.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 357.5]
@@ -1109,8 +1109,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية 35516، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_computers',
-                'logo' => 'logos/mansoura_computers.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 370.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 357.5]
@@ -1128,8 +1128,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق المنيا الجديدة، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/minya_finearts_arch',
-                'logo' => 'logos/minya_finearts_arch.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 321.0]
                 ]
@@ -1142,8 +1142,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طريق المنيا الجديدة، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/minya_finearts_arts',
-                'logo' => 'logos/minya_finearts_arts.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 290.5],
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 290.5]
@@ -1157,8 +1157,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_finearts_arch',
-                'logo' => 'logos/assuit_finearts_arch.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 319.0]
                 ]
@@ -1171,8 +1171,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_finearts_arts',
-                'logo' => 'logos/assuit_finearts_arts.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 288.0],
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 288.0]
@@ -1186,8 +1186,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/helwan_finearts_arch',
-                'logo' => 'logos/helwan_finearts_arch.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 337.0]
                 ]
@@ -1200,8 +1200,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/helwan_finearts_arts',
-                'logo' => 'logos/helwan_finearts_arts.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 298.5],
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 298.5]
@@ -1215,8 +1215,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية 5372066، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_finearts_arch',
-                'logo' => 'logos/alex_finearts_arch.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 332.0]
                 ]
@@ -1229,8 +1229,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_finearts_arts',
-                'logo' => 'logos/alex_finearts_arts.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 298.0],
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 298.0]
@@ -1244,8 +1244,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية 35516، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_finearts_arch',
-                'logo' => 'logos/mansoura_finearts_arch.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 330.0]
                 ]
@@ -1258,8 +1258,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_finearts_arts',
-                'logo' => 'logos/mansoura_finearts_arts.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 296.0],
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 296.0]
@@ -1276,8 +1276,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_commerce',
-                'logo' => 'logos/suez_commerce.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 308.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 308.0]
@@ -1291,8 +1291,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الكيلو ٤.٥، الطريق الدائري، الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/suez_commerce_aff',
-                'logo' => 'logos/suez_commerce_aff.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 299.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 299.5]
@@ -1306,8 +1306,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_commerce',
-                'logo' => 'logos/assuit_commerce.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 307.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 307.0]
@@ -1321,8 +1321,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/assuit_commerce_aff',
-                'logo' => 'logos/assuit_commerce_aff.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 299.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 299.0]
@@ -1336,8 +1336,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/helwan_commerce',
-                'logo' => 'logos/helwan_commerce.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 307.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 307.5]
@@ -1351,8 +1351,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/helwan_commerce_aff',
-                'logo' => 'logos/helwan_commerce_aff.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 300.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 300.0]
@@ -1366,8 +1366,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجيش، طنطا، الغربية، مصر',
                 'website' => 'https://www.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/tanta_commerce',
-                'logo' => 'logos/tanta_commerce.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 306.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 306.5]
@@ -1381,8 +1381,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجيش، طنطا، الغربية، مصر',
                 'website' => 'https://www.tanta.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/tanta_commerce_aff',
-                'logo' => 'logos/tanta_commerce_aff.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 301.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 301.5]
@@ -1396,8 +1396,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية 5372066، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_commerce',
-                'logo' => 'logos/alex_commerce.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 308.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 308.5],
@@ -1412,8 +1412,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المُسَلَّة شرق، العطارين، محافظة الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/alex_commerce_aff',
-                'logo' => 'logos/alex_commerce_aff.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 305.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 305.5]
@@ -1427,8 +1427,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ainshams_commerce',
-                'logo' => 'logos/ainshams_commerce.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 304.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 304.0]
@@ -1442,8 +1442,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الخليفة المأمون، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/ainshams_commerce_aff',
-                'logo' => 'logos/ainshams_commerce_aff.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 300.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 300.5]
@@ -1462,8 +1462,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية 35516، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_commerce',
-                'logo' => 'logos/mansoura_commerce.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 318.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 318.5]
@@ -1477,8 +1477,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجمهورية، المنصورة، محافظة الدقهلية، مصر',
                 'website' => 'https://www.mans.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/mansoura_commerce_aff',
-                'logo' => 'logos/mansoura_commerce_aff.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 311.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 311.0]
@@ -1496,8 +1496,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنيا، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/minya_university', // Placeholder link
-                'logo' => 'logos/minya_law.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 323.5],
                 ],
@@ -1510,8 +1510,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة أسيوط، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/assiut_university', // Placeholder link
-                'logo' => 'logos/assiut_law.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 287.5],
                 ],
@@ -1524,8 +1524,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة حلوان، حلوان، مصر',
                 'website' => 'https://www.helwan.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/helwan_university', // Placeholder link
-                'logo' => 'logos/helwan_law.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 273.0],
                 ],
@@ -1538,8 +1538,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة طنطا، طنطا، مصر',
                 'website' => 'https://www.tanta.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/tanta_university', // Placeholder link
-                'logo' => 'logos/tanta_law.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 274.0],
                 ],
@@ -1552,8 +1552,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الإسكندرية، الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/alexandria_university', // Placeholder link
-                'logo' => 'logos/alexandria_law.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 277.5],
                 ],
@@ -1566,8 +1566,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/ainshams_university', // Placeholder link
-                'logo' => 'logos/ainshams_law.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 275.0],
                 ],
@@ -1580,8 +1580,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنصورة، المنصورة، مصر',
                 'website' => 'https://www.mans.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/mansoura_university', // Placeholder link
-                'logo' => 'logos/mansoura_law.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 282.0],
                 ],
@@ -1597,8 +1597,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة قناة السويس، الإسماعيلية، مصر',
                 'website' => 'https://suezuniv.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/suez_canal_university', // Placeholder link
-                'logo' => 'logos/suez_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 299.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 250.5],
@@ -1613,8 +1613,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنيا، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/minya_university', // Placeholder link
-                'logo' => 'logos/minya_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 291.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 243.0],
@@ -1629,8 +1629,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة أسيوط، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/assiut_university', // Placeholder link
-                'logo' => 'logos/assiut_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 283.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 242.0],
@@ -1645,8 +1645,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة حلوان، حلوان، مصر',
                 'website' => 'https://www.helwan.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/helwan_university', // Placeholder link
-                'logo' => 'logos/helwan_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 283.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 268.0],
@@ -1661,8 +1661,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة طنطا، طنطا، مصر',
                 'website' => 'https://www.tanta.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/tanta_university', // Placeholder link
-                'logo' => 'logos/tanta_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 301.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 262.0],
@@ -1677,8 +1677,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الإسكندرية، الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/alexandria_university', // Placeholder link
-                'logo' => 'logos/alexandria_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 297.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 273.0],
@@ -1693,8 +1693,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/ainshams_university', // Placeholder link
-                'logo' => 'logos/ainshams_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 293.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 275.5],
@@ -1711,8 +1711,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنصورة، المنصورة، مصر',
                 'website' => 'https://www.mans.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/mansoura_university', // Placeholder link
-                'logo' => 'logos/mansoura_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 310.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 253.0],
@@ -1730,8 +1730,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنيا، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/minya_university', // Placeholder link
-                'logo' => 'logos/minya_specific_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 257.5],
                 ],
@@ -1744,8 +1744,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة أسيوط، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/assiut_university', // Placeholder link
-                'logo' => 'logos/assiut_specific_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 254.5],
                 ],
@@ -1758,8 +1758,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة طنطا، طنطا، مصر',
                 'website' => 'https://www.tanta.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/tanta_university', // Placeholder link
-                'logo' => 'logos/tanta_specific_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 257.0],
                 ],
@@ -1772,8 +1772,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الإسكندرية، الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/alexandria_university', // Placeholder link
-                'logo' => 'logos/alexandria_specific_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 259.0],
                 ],
@@ -1786,8 +1786,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/ainshams_university', // Placeholder link
-                'logo' => 'logos/ainshams_specific_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 261.5],
                 ],
@@ -1800,8 +1800,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنصورة، المنصورة، مصر',
                 'website' => 'https://www.mans.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/mansoura_university', // Placeholder link
-                'logo' => 'logos/mansoura_specific_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 259.0],
                 ],
@@ -1817,8 +1817,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنيا، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/minya_university', // Placeholder link
-                'logo' => 'logos/minya_arts.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 265.5],
                 ],
@@ -1831,8 +1831,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة أسيوط، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/assiut_university', // Placeholder link
-                'logo' => 'logos/assiut_arts.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 265.0],
                 ],
@@ -1845,8 +1845,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة حلوان، حلوان، مصر',
                 'website' => 'https://www.helwan.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/helwan_university', // Placeholder link
-                'logo' => 'logos/helwan_arts.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 277.5],
                 ],
@@ -1859,8 +1859,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة طنطا، طنطا، مصر',
                 'website' => 'https://www.tanta.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/tanta_university', // Placeholder link
-                'logo' => 'logos/tanta_arts.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 270.5],
                 ],
@@ -1873,8 +1873,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الإسكندرية، الإسكندرية، مصر',
                 'website' => 'https://www.alexu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/alexandria_university', // Placeholder link
-                'logo' => 'logos/alexandria_arts.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 277.0],
                 ],
@@ -1887,8 +1887,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/ainshams_university', // Placeholder link
-                'logo' => 'logos/ainshams_arts.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 280.5],
                 ],
@@ -1901,8 +1901,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنصورة، المنصورة، مصر',
                 'website' => 'https://www.mans.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/mansoura_university', // Placeholder link
-                'logo' => 'logos/mansoura_arts.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 275.0],
                 ],
@@ -1920,8 +1920,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الإسماعيلية، مصر',
                 'website' => 'https://agri.suez.edu.eg/',
-                'location' => 'https://goo.gl/maps/xyz123',
-                'logo' => 'logos/suez_agriculture.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 285.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 265.0],
@@ -1935,8 +1935,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المنيا، مصر',
                 'website' => 'https://agr.minia.edu.eg/',
-                'location' => 'https://goo.gl/maps/abc456',
-                'logo' => 'logos/minia_agriculture.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 283.5],
                 ],
@@ -1949,8 +1949,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'أسيوط، مصر',
                 'website' => 'https://aun.edu.eg/agriculture/ar',
-                'location' => 'https://goo.gl/maps/def789',
-                'logo' => 'logos/assuit_agriculture.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 283.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 265.0],
@@ -1964,8 +1964,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طنطا، مصر',
                 'website' => 'https://agr.tanta.edu.eg/',
-                'location' => 'https://goo.gl/maps/ghi012',
-                'logo' => 'logos/tanta_agriculture.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 294.5],
                 ],
@@ -1978,8 +1978,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الإسكندرية، مصر',
                 'website' => 'https://agr.alexu.edu.eg/',
-                'location' => 'https://goo.gl/maps/jkl345',
-                'logo' => 'logos/alex_agriculture.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 300.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 296.0],
@@ -1993,8 +1993,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'القاهرة، مصر',
                 'website' => 'https://agr.asu.edu.eg/',
-                'location' => 'https://goo.gl/maps/mno678',
-                'logo' => 'logos/ain_agriculture.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 300.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 286.0],
@@ -2010,8 +2010,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الإسماعيلية، مصر',
                 'website' => 'https://suez.edu.eg/ar/كلية-العلوم/',
-                'location' => 'https://goo.gl/maps/xyz123',
-                'logo' => 'logos/suez_science.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 337.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 297.0],
@@ -2025,8 +2025,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المنيا، مصر',
                 'website' => 'https://sci.minia.edu.eg/',
-                'location' => 'https://goo.gl/maps/abc456',
-                'logo' => 'logos/minia_science.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 335.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 281.0],
@@ -2040,8 +2040,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/science/ar',
-                'location' => 'https://goo.gl/maps/def789',
-                'logo' => 'logos/assuit_science.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 342.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 286.0],
@@ -2055,8 +2055,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'حلوان، القاهرة، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://goo.gl/maps/ghi012',
-                'logo' => 'logos/helwan_science.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 331.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 299.5],
@@ -2070,8 +2070,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'طنطا، الغربية، مصر',
                 'website' => 'https://sci.tanta.edu.eg/',
-                'location' => 'https://goo.gl/maps/jkl345',
-                'logo' => 'logos/tanta_science.png',
+                'location' => 'https://goo.gl/maps/9fA5l2s3umr5c3FG7',
+                'logo' => 'logos/tanta_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 338.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 302.5],
@@ -2085,8 +2085,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الإسكندرية، مصر',
                 'website' => 'https://alexu.edu.eg/',
-                'location' => 'https://goo.gl/maps/mno678',
-                'logo' => 'logos/alex_economics_political_science.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 346.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 332.5],
@@ -2101,8 +2101,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'عباس العقاد، مدينة نصر، القاهرة، مصر',
                 'website' => 'https://science.asu.edu.eg/',
-                'location' => 'https://goo.gl/maps/HXn8DdN1r5vqQFd47',
-                'logo' => 'logos/asu_science.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 335.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 311.0],
@@ -2118,8 +2118,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'المنصورة، الدقهلية، مصر',
                 'website' => 'https://sciencefac.mans.edu.eg/',
-                'location' => 'https://goo.gl/maps/Uksv7CZVNqjKkDKK8',
-                'logo' => 'logos/mansoura_science.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 342.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 300.5],
@@ -2138,8 +2138,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة قناة السويس، الإسماعيلية، مصر',
                 'website' => 'https://suh.suez.edu.eg/',
-                'location' => 'https://goo.gl/maps/73kJQvB3XZkXoxLz8',
-                'logo' => 'logos/suez_tourism.png',
+                'location' => 'https://goo.gl/maps/8eZ4k1r2umr5c3FG7',
+                'logo' => 'logos/suez_canal_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 246.0],
                 ],
@@ -2152,8 +2152,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنيا، طريق مصر أسيوط الزراعي، المنيا، مصر',
                 'website' => 'https://www.minia.edu.eg/tourism/',
-                'location' => 'https://goo.gl/maps/zCtFa98RUnEQ7Kfq8',
-                'logo' => 'logos/minia_tourism.png',
+                'location' => 'https://goo.gl/maps/7dY3j0q1umr5c3FG7',
+                'logo' => 'logos/minia_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 246.0],
                 ],
@@ -2166,8 +2166,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الطابية، قسم باب شرق، الإسكندرية، مصر',
                 'website' => 'https://alexu.edu.eg/',
-                'location' => 'https://goo.gl/maps/mxqBDKc9dpUdY8Aw5',
-                'logo' => 'logos/alex_tourism.png',
+                'location' => 'https://goo.gl/maps/2yT8e5o6umr5c3FG7',
+                'logo' => 'logos/alexandria_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 246.0],
                 ],
@@ -2180,8 +2180,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة المنصورة، الدقهلية، مصر',
                 'website' => 'https://www.tourismfac.mans.edu.eg/',
-                'location' => 'https://goo.gl/maps/KkaWEXdZkdcwAixn6',
-                'logo' => 'logos/mansoura_tourism.png',
+                'location' => 'https://goo.gl/maps/4aV0g7o8umr5c3FG7',
+                'logo' => 'logos/mansoura_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 246.0],
                 ],
@@ -2195,8 +2195,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة أسيوط، أسيوط، مصر',
                 'website' => 'https://www.aun.edu.eg/',
-                'location' => 'https://goo.gl/maps/Pd14vwo2sctZED2s9',
-                'logo' => 'logos/assuit_social.png',
+                'location' => 'https://goo.gl/maps/3zU9f6o7umr5c3FG7',
+                'logo' => 'logos/assiut_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 247.5],
                 ],
@@ -2209,8 +2209,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة حلوان، حلوان، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://goo.gl/maps/6hMC4h8gnEw3e5F6A',
-                'logo' => 'logos/helwan_social.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 253.5],
                 ],
@@ -2224,8 +2224,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، القاهرة، مصر',
                 'website' => 'https://www.fms.edu.eg/',
-                'location' => 'https://goo.gl/maps/G6jqq97pzvF3uoR69',
-                'logo' => 'logos/ain_shams_media.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 333.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 325.5],
@@ -2241,8 +2241,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة عين شمس، القاهرة، مصر',
                 'website' => 'https://www.asu.edu.eg/',
-                'location' => 'https://goo.gl/maps/7QecFThY5oM2',
-                'logo' => 'logos/ain_shams_archaeology.png',
+                'location' => 'https://goo.gl/maps/1zG7e4o5umr5c3FG7',
+                'logo' => 'logos/ain_shams.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 312.5],
                 ],
@@ -2256,8 +2256,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة حلوان، حلوان، مصر',
                 'website' => 'https://www.helwan.edu.eg/',
-                'location' => 'https://goo.gl/maps/6hMC4h8gnEw3e5F6A',
-                'logo' => 'logos/helwan_home_economics.png',
+                'location' => 'https://goo.gl/maps/6cX2i9p0umr5c3FG7',
+                'logo' => 'logos/helwan_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 253.0],
                 ],
@@ -2683,8 +2683,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، محافظة الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/XYZ456',
-                'logo' => 'logos/disability_zu.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 342.0],
                 ],
@@ -2698,8 +2698,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، محافظة الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/XYZ789',
-                'logo' => 'logos/archaeology_zu.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 335.5],
                 ],
@@ -2713,8 +2713,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، محافظة الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/XYZ103',
-                'logo' => 'logos/education_zu.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 320.0],
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 320.0],
@@ -2729,8 +2729,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/Asr1FjEAsFFSo7Yt9',
-                'logo' => 'logos/zagazig_engineering.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 372.0],
                 ],
@@ -2744,8 +2744,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، الشرقية، مصر',
                 'website' => 'https://pharm.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/JDuEkW1dbK2YasJX9',
-                'logo' => 'logos/zagazig_pharmacy.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 377.5],
                 ],
@@ -2759,8 +2759,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/zagazig_medicine',
-                'logo' => 'logos/zagazig_medicine.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 389.0]
                 ]
@@ -2774,8 +2774,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/zagazig_dentistry',
-                'logo' => 'logos/zagazig_dentistry.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 381.5]
                 ]
@@ -2789,8 +2789,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/zagazig_vet',
-                'logo' => 'logos/zagazig_vet.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 368.5]
                 ]
@@ -2804,8 +2804,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/zagazig_nursing',
-                'logo' => 'logos/zagazig_nursing.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 355.0]
                 ]
@@ -2819,8 +2819,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/zagazig_technursing',
-                'logo' => 'logos/zagazig_technursing.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 326.0]
                 ]
@@ -2834,8 +2834,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/zagazig_computers',
-                'logo' => 'logos/zagazig_computers.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 369.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 355.1]
@@ -2850,8 +2850,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/zagazig_commerce',
-                'logo' => 'logos/zagazig_commerce.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 317.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 317.5]
@@ -2866,8 +2866,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'شارع الجامعة، الزقازيق، الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://maps.app.goo.gl/zagazig_commerce_aff',
-                'logo' => 'logos/zagazig_commerce_aff.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 307.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 307.5]
@@ -2882,8 +2882,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، الزقازيق، مصر',
                 'website' => 'https://www.zu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/zagazig_university', // Placeholder link
-                'logo' => 'logos/zagazig_law.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 289.5],
                 ],
@@ -2897,8 +2897,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، الزقازيق، مصر',
                 'website' => 'https://www.zu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/zagazig_university', // Placeholder link
-                'logo' => 'logos/zagazig_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 315.5],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 266.5],
@@ -2913,8 +2913,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، الزقازيق، مصر',
                 'website' => 'https://www.zu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/zagazig_university', // Placeholder link
-                'logo' => 'logos/zagazig_specific_education.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 255.5],
                 ],
@@ -2928,8 +2928,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، الزقازيق، مصر',
                 'website' => 'https://www.zu.edu.eg/', // General university website
-                'location' => 'https://maps.app.goo.gl/zagazig_university', // Placeholder link
-                'logo' => 'logos/zagazig_arts.png', // Placeholder logo path
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 270.5],
                 ],
@@ -2943,8 +2943,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'الزقازيق، محافظة الشرقية، مصر',
                 'website' => 'https://www.zu.edu.eg/',
-                'location' => 'https://goo.gl/maps/4dzzy3JP3TK52NoB6',
-                'logo' => 'logos/zagazig_science.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 344.0],
                     ['study_track' => 'علمي رياضة', 'minimum_grade' => 305.5],
@@ -2959,8 +2959,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، صان الحجر، الشرقية، مصر',
                 'website' => 'https://www.sue.edu.eg/',
-                'location' => 'https://goo.gl/maps/jnWZzqk5qgu',
-                'logo' => 'logos/zuqazig_archaeology.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'علمي علوم', 'minimum_grade' => 327.5],
                 ],
@@ -2974,8 +2974,8 @@ class FacultySeeder extends Seeder
                 'requirements' => 'يشترط القبول في الكلية الحصول على شهادة الثانوية العامة (شعبة علمي علوم) بمجموع لا يقل عن الحد الأدنى للقبول المُعلن. تشمل الأوراق المطلوبة: أصل شهادة الثانوية العامة، بطاقة الرقم القومي، شهادة الميلاد، ٦ صور شخصية حديثة، استمارة ٢ جند (للذكور)، واستمارة ٦ جند أو ٧ جند حسب الموقف من التجنيد. يُفضل إحضار نسخة إلكترونية من المستندات ',
                 'address' => 'جامعة الزقازيق، الزقازيق، مصر',
                 'website' => 'https://www.sue.edu.eg/',
-                'location' => 'https://goo.gl/maps/jnWZzqk5qgu',
-                'logo' => 'logos/zu_disability_rehabilitation.png',
+                'location' => 'https://goo.gl/maps/5bW1h8o9umr5c3FG7',
+                'logo' => 'logos/zagazig_university.png',
                 'grades' => [
                     ['study_track' => 'أدبي', 'minimum_grade' => 340.0],
                 ],
