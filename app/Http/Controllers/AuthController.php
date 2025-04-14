@@ -49,7 +49,10 @@ class AuthController extends Controller
 
     public function logout(Request $request)
     {
+        Log::info('Logout request received for user: ' . $request->user()->id);
+        Log::info('Token: ' . $request->header('Authorization')); // Log the token
         $request->user()->tokens()->delete();
+        Log::info('Tokens deleted for user: ' . $request->user()->id);
         return response()->json(['message' => 'Logged out']);
     }
 

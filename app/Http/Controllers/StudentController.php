@@ -7,6 +7,7 @@ use App\Models\Specialization;
 use App\Models\Faculty;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Auth;
 use App\Models\FacultyGrade;
 
 class StudentController extends Controller
@@ -115,6 +116,17 @@ class StudentController extends Controller
                 'error' => $e->getMessage(),
             ], 500);
         }
+    }
+    public function getStudentData()
+    {
+        $student = User::with(['governate', 'educationalAdministration', 'school', 'specialization'])
+            ->find(Auth::id());
+
+        if (!$student) {
+            return response()->json(['message' => 'Student not found'], 404);
+        }
+
+        return response()->json($student);
     }
 
     public function getStudentWithFaculties($seat_number)
