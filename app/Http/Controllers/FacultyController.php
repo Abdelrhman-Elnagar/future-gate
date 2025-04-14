@@ -13,7 +13,7 @@ class FacultyController extends Controller
     // Fetch all faculties
     public function index()
     {
-        $faculties = Faculty::all();
+        $faculties = Faculty::inRandomOrder()->get();
         return response()->json($faculties);
     }
 
