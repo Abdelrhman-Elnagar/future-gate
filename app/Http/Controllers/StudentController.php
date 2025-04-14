@@ -190,4 +190,74 @@ class StudentController extends Controller
             ], 500);
         }
     }
+
+    public function getStudentNominationPaper($seat_number)
+    {
+        try {
+            if (!is_numeric($seat_number) || $seat_number < 0) {
+                return response()->json([
+                    'success' => false,
+                    'message' => 'Invalid seat number',
+                ], 400);
+            }
+
+            // Load student with relationships
+            $student = User::with([
+                'governate',
+                'educationalAdministration',
+                'school',
+                'specialization'
+            ])->where('seat_number', $seat_number)->first();
+
+            if (!$student) {
+                return response()->json([
+                    'success' => false,
+                    'message' => 'Student not found',
+                ], 404);
+            }
+
+            // Get the student's specialization (study track)
+            $studyTrack = $student->specialization ? $student->specialization->name : null;
+            if (!$studyTrack) {
+                return response()->json([
+                    'success' => false,
+                    'message' => 'Student specialization not found',
+                ], 400);
+            }
+
+            // Get the first faculty matching the student's grade and specialization
+            $faculty = FacultyGrade::with(['faculty.university'])
+                ->where('study_track', $studyTrack) // Match specialization
+                ->where('minimum_grade', '<=', $student->grade) // Match grade
+                ->orderBy('minimum_grade', 'desc') // Highest minimum_grade first
+                ->first(); // Get the first record
+
+            if (!$faculty) {
+                return response()->json([
+                    'success' => true,
+                    'data' => [
+                        'student' => $student,
+                        'faculty' => null // No faculty found
+                    ],
+                    'message' => 'No faculty found matching the student\'s grade and specialization',
+                ], 200);
+            }
+
+            return response()->json([
+                'success' => true,
+                'data' => [
+                    'student' => $student,
+                    'faculty' => $faculty->faculty // Extract the faculty object
+                ],
+                'message' => 'Student information and nomination faculty retrieved successfully',
+            ], 200);
+        } catch (\Exception $e) {
+            Log::error("Error in StudentController@getStudentNominationPaper: " . $e->getMessage());
+            return response()->json([
+                'success' => false,
+                'message' => 'Failed to retrieve student and nomination faculty',
+                'error' => $e->getMessage(),
+            ], 500);
+        }
+    }
 }

@@ -9,6 +9,7 @@ use App\Models\Student;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Facades\Log;
 
 
 class AuthController extends Controller
@@ -20,18 +21,29 @@ class AuthController extends Controller
 
     public function login(Request $request)
     {
-        $credentials = $request->validate([
-            'seat_number' => 'required',
-            'password' => 'required',
-        ]);
+        try {
+            $credentials = $request->validate([
+                'seat_number' => 'required',
+                'password' => 'required',
+            ]);
 
-        if (Auth::attempt($credentials)) {
-            $user = Auth::user();
-            $token = $user->createToken('future-gate')->plainTextToken;
-            return response()->json(['token' => $token, 'user' => $user]);
+            if (Auth::attempt($credentials)) {
+                $user = User::with(['governate', 'educationalAdministration', 'school', 'specialization'])
+                    ->find(Auth::id());
+
+                if (!$user) {
+                    return response()->json(['message' => 'User data not found.'], 404);
+                }
+
+                $token = $user->createToken('future-gate')->plainTextToken;
+                return response()->json(['token' => $token, 'user' => $user], 200);
+            }
+
+            return response()->json(['message' => 'Invalid credentials'], 401);
+        } catch (\Exception $e) {
+            Log::error("Error in login: " . $e->getMessage());
+            return response()->json(['message' => 'Login failed.', 'error' => $e->getMessage()], 500);
         }
-
-        return response()->json(['message' => 'Invalid credentials'], 401);
     }
 
 
