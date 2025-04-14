@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('location');
             $table->string('website')->nullable();
             $table->string('logo')->nullable(); // Path to logo image
+            $table->string('pic')->nullable(); // Path to logo image
             $table->text('description')->nullable();
             $table->year('established_year');
             $table->string('email')->nullable();

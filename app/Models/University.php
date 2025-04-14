@@ -15,6 +15,7 @@ class University extends Model
         'location',
         'website',
         'logo',
+        'pic',
         'description',
         'established_year',
         'email',

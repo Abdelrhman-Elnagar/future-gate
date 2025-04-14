@@ -19,7 +19,8 @@ class Faculty extends Model
         'ranking',
         'address',
         'website',
-        'logo'
+        'logo',
+        'pic',
     ];
 
     public function university()

@@ -22,6 +22,7 @@ return new class extends Migration
             $table->string('location')->nullable();
             $table->string('website')->nullable(); // Website URL
             $table->string('logo')->nullable(); // Faculty Logo
+            $table->string('pic')->nullable(); // Faculty Logo
             $table->timestamps();
         });
     }
