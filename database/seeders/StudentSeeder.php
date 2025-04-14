@@ -37,6 +37,38 @@ class StudentSeeder extends Seeder
                     continue; // Skip this student if necessary fields are missing
                 }
 
+                // Convert Excel date (days since 1900-01-01) to YYYY-MM-DD format
+                $excelDate = $studentData['تاريخ الميلاد'];
+                $dateOfBirth = $this->convertExcelDateToDateTime($excelDate);
+                if (!$dateOfBirth) {
+                    Log::warning("Invalid date of birth for student at row " . ($index + 2) . ": " . json_encode($studentData));
+                    continue;
+                }
+
+                // Get foreign key IDs
+                $governateId = $this->getGovernorateId($studentData['المحافظة']);
+                $educationalAdministrationId = $this->getEducationalAdministrationId($studentData['الإدارة التعليمية']);
+                $schoolId = $this->getSchoolId($studentData['المدرسة']);
+                $specializationId = $this->getSpecializationId($studentData['التخصص']);
+
+                // Check if any foreign key is missing
+                if (!$governateId) {
+                    Log::warning("Governorate not found for student at row " . ($index + 2) . ": " . json_encode($studentData));
+                    continue;
+                }
+                if (!$educationalAdministrationId) {
+                    Log::warning("Educational Administration not found for student at row " . ($index + 2) . ": " . json_encode($studentData));
+                    continue;
+                }
+                if (!$schoolId) {
+                    Log::warning("School not found for student at row " . ($index + 2) . ": " . json_encode($studentData));
+                    continue;
+                }
+                if (!$specializationId) {
+                    Log::warning("Specialization not found for student at row " . ($index + 2) . ": " . json_encode($studentData));
+                    continue;
+                }
+
                 // Create the user (student)
                 $user = User::create([
                     'name' => $studentData['الاسم'],
@@ -47,13 +79,13 @@ class StudentSeeder extends Seeder
                     'phone_number' => $studentData['رقم الهاتف'],
                     'national_id' => $studentData['الرقم القومى'],
                     'gender' => $studentData['الجنس'],
-                    'date_of_birth' => $studentData['تاريخ الميلاد'],
+                    'date_of_birth' => $dateOfBirth,
                     'address' => $studentData['عنوان السكن'],
                     'percentage' => $studentData['النسبة المئوية'],
-                    'governorate_id' => $this->getGovernorateId($studentData['المحافظة']),
-                    'educational_administration_id' => $this->getEducationalAdministrationId($studentData['الإدارة التعليمية']),
-                    'school_id' => $this->getSchoolId($studentData['المدرسة']),
-                    'specialization_id' => $this->getSpecializationId($studentData['التخصص']),
+                    'governate_id' => $governateId,
+                    'educational_administration_id' => $educationalAdministrationId,
+                    'school_id' => $schoolId,
+                    'specialization_id' => $specializationId,
                 ]);
 
                 // Assign subjects after the user is created
@@ -63,6 +95,34 @@ class StudentSeeder extends Seeder
                 Log::error("❌ Failed to import student at row " . ($index + 2) . ": " . json_encode($studentData) . " | Error: " . $e->getMessage());
             }
         }
+    }
+
+    /**
+     * Convert Excel date (days since 1900-01-01) to YYYY-MM-DD format
+     *
+     * @param int|string $excelDate
+     * @return string|null
+     */
+    private function convertExcelDateToDateTime($excelDate)
+    {
+        if (is_numeric($excelDate) && $excelDate > 0) {
+            // Excel dates are days since 1900-01-01, but Excel incorrectly treats 1900 as a leap year
+            // So we need to adjust for this bug: subtract 1 day if the date is after 1900-02-28
+            $days = (int) $excelDate;
+            if ($days > 59) { // After 1900-02-28
+                $days -= 1; // Adjust for Excel's 1900 leap year bug
+            }
+
+            // Create a DateTime object starting from 1900-01-01
+            $date = new \DateTime('1900-01-01');
+            // Add the number of days
+            $date->modify("+$days days");
+            // Return the date in YYYY-MM-DD format
+            return $date->format('Y-m-d');
+        }
+
+        // If the date is invalid, return null
+        return null;
     }
 
     private function getGovernorateId($name)

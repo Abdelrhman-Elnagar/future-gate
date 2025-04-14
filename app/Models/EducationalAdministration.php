@@ -12,10 +12,10 @@ class EducationalAdministration extends Model
 
 
 
-    protected $fillable = ['name', 'governorate_id'];
+    protected $fillable = ['name', 'governate_id'];
 
     // Relationship to Governorate
-    public function governorate()
+    public function governate()
     {
         return $this->belongsTo(Governate::class);
     }

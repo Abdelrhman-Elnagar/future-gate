@@ -22,3 +22,4 @@ Route::get('/faculties/filter', [FacultyController::class, 'filter']); // Filter
 Route::get('/students', [StudentController::class, 'index']);
 Route::get('/students/{id}', [StudentController::class, 'show']);
 Route::get('/students/filter', [StudentController::class, 'filter']); // Filter by track
+Route::get('/students/by-seat-number/{seat_number}', [StudentController::class, 'getStudentWithFaculties']);

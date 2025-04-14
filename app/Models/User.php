@@ -13,7 +13,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class User extends Authenticatable
 {
     /** @use HasFactory<\Database\Factories\UserFactory> */
-    use HasFactory, Notifiable, HasApiTokens,SoftDeletes;
+    use HasFactory, Notifiable, HasApiTokens;
 
     /**
      * The attributes that are mass assignable.
@@ -24,13 +24,10 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
-        // 'role',
-
         'seat_number',
-        // 'user_id',
         'grade',
         'percentage',
-        'governorate_id',
+        'governate_id',
         'educational_administration_id',
         'school_id',
         'specialization_id',
@@ -66,7 +63,7 @@ class User extends Authenticatable
     }
 
 
-     public function governorate()
+     public function governate()
     {
         return $this->belongsTo(Governate::class);
     }

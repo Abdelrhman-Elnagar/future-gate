@@ -24,7 +24,7 @@ return new class extends Migration
             $table->date('date_of_birth')->nullable();
             $table->text('address')->nullable();
             $table->text('percentage')->nullable();
-            $table->foreignId('governorate_id')->constrained('governorates')->onDelete('cascade');
+            $table->foreignId('governate_id')->constrained('governates')->onDelete('cascade');
             $table->foreignId('educational_administration_id')->constrained('educational_administrations')->onDelete('cascade');
             $table->foreignId('school_id')->constrained('schools')->onDelete('cascade');
             $table->foreignId('specialization_id')->constrained('specializations')->onDelete('cascade');
