@@ -152,39 +152,46 @@ class StudentSeeder extends Seeder
 
     private function assignSubjects($user, $studentData)
     {
-        $subjects = [];
+        $subjectsWithPivotData = [];
 
         $commonSubjects = ['اللغة العربية', 'اللغة الإنجليزية', 'اللغة الثانية'];
-        foreach ($commonSubjects as $subject) {
-            if (!empty($studentData[$subject])) {
-                $subjects[] = $this->getSubjectId($subject);
+        foreach ($commonSubjects as $subjectName) {
+            $subjectId = $this->getSubjectId($subjectName);
+            if ($subjectId && isset($studentData[$subjectName])) {
+                $grade = $studentData[$subjectName]; // Assuming the grade is in the same column
+                $subjectsWithPivotData[$subjectId] = ['grade' => $grade];
             }
         }
 
         $spec = $studentData['التخصص'];
 
         if ($spec === 'علمى رياضة') {
-            foreach (['الفيزياء', 'الكيمياء', 'الرياضيات البحتة', 'الرياضيات التطبيقية'] as $subject) {
-                if (!empty($studentData[$subject])) {
-                    $subjects[] = $this->getSubjectId($subject);
+            foreach (['الفيزياء', 'الكيمياء', 'الرياضيات البحتة', 'الرياضيات التطبيقية'] as $subjectName) {
+                $subjectId = $this->getSubjectId($subjectName);
+                if ($subjectId && isset($studentData[$subjectName])) {
+                    $grade = $studentData[$subjectName];
+                    $subjectsWithPivotData[$subjectId] = ['grade' => $grade];
                 }
             }
         } elseif ($spec === 'علمي علوم') {
-            foreach (['الفيزياء', 'الكيمياء', 'الأحياء', 'الجيولوجيا'] as $subject) {
-                if (!empty($studentData[$subject])) {
-                    $subjects[] = $this->getSubjectId($subject);
+            foreach (['الفيزياء', 'الكيمياء', 'الأحياء', 'الجيولوجيا'] as $subjectName) {
+                $subjectId = $this->getSubjectId($subjectName);
+                if ($subjectId && isset($studentData[$subjectName])) {
+                    $grade = $studentData[$subjectName];
+                    $subjectsWithPivotData[$subjectId] = ['grade' => $grade];
                 }
             }
         } elseif ($spec === 'أدبي') {
-            foreach (['التاريخ', 'الجغرافيا', 'الفلسفة', 'علم النفس'] as $subject) {
-                if (!empty($studentData[$subject])) {
-                    $subjects[] = $this->getSubjectId($subject);
+            foreach (['التاريخ', 'الجغرافيا', 'الفلسفة', 'علم النفس'] as $subjectName) {
+                $subjectId = $this->getSubjectId($subjectName);
+                if ($subjectId && isset($studentData[$subjectName])) {
+                    $grade = $studentData[$subjectName];
+                    $subjectsWithPivotData[$subjectId] = ['grade' => $grade];
                 }
             }
         }
 
-        // Remove empty subjects and assign them to the user
-        $subjects = array_filter($subjects);
-        $user->subjects()->syncWithoutDetaching($subjects);
+        // Attach the subjects with the grade data to the user
+        $user->subjects()->sync($subjectsWithPivotData);
     }
 }

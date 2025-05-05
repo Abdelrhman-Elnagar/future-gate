@@ -119,7 +119,7 @@ class StudentController extends Controller
     }
     public function getStudentData()
     {
-        $student = User::with(['governate', 'educationalAdministration', 'school', 'specialization'])
+        $student = User::with(['governate', 'educationalAdministration', 'school', 'specialization', 'subjects'])
             ->find(Auth::id());
 
         if (!$student) {
@@ -139,12 +139,13 @@ class StudentController extends Controller
                 ], 400);
             }
 
-            // Load student with relationships
+            // Load student with relationships, including subjects
             $student = User::with([
                 'governate',
                 'educationalAdministration',
                 'school',
-                'specialization'
+                'specialization',
+                'subjects' // Load the subjects relationship
             ])->where('seat_number', $seat_number)->first();
 
             if (!$student) {
@@ -178,7 +179,8 @@ class StudentController extends Controller
                 return response()->json([
                     'success' => true,
                     'data' => [
-                        'student' => $student,
+                        'student' => $student->toArray(), // Convert student object to array
+                        'subjects' => $student->subjects->toArray(), // Convert subjects collection to array
                         'faculties' => []
                     ],
                     'message' => 'No faculties found matching the student\'s grade and specialization',
@@ -188,7 +190,8 @@ class StudentController extends Controller
             return response()->json([
                 'success' => true,
                 'data' => [
-                    'student' => $student,
+                    'student' => $student->toArray(), // Convert student object to array
+                    'subjects' => $student->subjects->toArray(), // Convert subjects collection to array
                     'faculties' => $faculties
                 ],
                 'message' => 'Student information and faculties retrieved successfully',
@@ -213,12 +216,13 @@ class StudentController extends Controller
                 ], 400);
             }
 
-            // Load student with relationships
+            // Load student with relationships, including subjects
             $student = User::with([
                 'governate',
                 'educationalAdministration',
                 'school',
-                'specialization'
+                'specialization',
+                'subjects' // Load the subjects relationship
             ])->where('seat_number', $seat_number)->first();
 
             if (!$student) {
@@ -248,7 +252,8 @@ class StudentController extends Controller
                 return response()->json([
                     'success' => true,
                     'data' => [
-                        'student' => $student,
+                        'student' => $student->toArray(), // Convert student object to array
+                        'subjects' => $student->subjects->toArray(), // Convert subjects collection to array
                         'faculty' => null // No faculty found
                     ],
                     'message' => 'No faculty found matching the student\'s grade and specialization',
@@ -258,7 +263,8 @@ class StudentController extends Controller
             return response()->json([
                 'success' => true,
                 'data' => [
-                    'student' => $student,
+                    'student' => $student->toArray(), // Convert student object to array
+                    'subjects' => $student->subjects->toArray(), // Convert subjects collection to array
                     'faculty' => $faculty->faculty // Extract the faculty object
                 ],
                 'message' => 'Student information and nomination faculty retrieved successfully',
