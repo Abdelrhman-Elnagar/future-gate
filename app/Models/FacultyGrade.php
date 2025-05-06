@@ -10,7 +10,7 @@ class FacultyGrade extends Model
     /** @use HasFactory<\Database\Factories\FacultyGradeFactory> */
     use HasFactory;
 
-    protected $fillable = ['faculty_id', 'study_track', 'minimum_grade'];
+    protected $fillable = ['faculty_id', 'study_track', 'minimum_grade', 'percentage'];
 
     public function faculty()
     {

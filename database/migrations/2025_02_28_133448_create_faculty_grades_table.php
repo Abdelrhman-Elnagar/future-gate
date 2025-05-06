@@ -16,6 +16,7 @@ return new class extends Migration
             $table->foreignId('faculty_id')->constrained()->onDelete('cascade'); // Each grade belongs to a faculty
             $table->enum('study_track', ['علمي علوم', 'علمي رياضة', 'أدبي']); // Study track
             $table->decimal('minimum_grade', 5, 2); // Example: 387.0
+            $table->decimal('percentage', 5, 2)->nullable()->storedAs('ROUND((minimum_grade / 410) * 100, 2)');
             $table->timestamps();
         });
     }

@@ -28,15 +28,9 @@ class AuthController extends Controller
             ]);
 
             if (Auth::attempt($credentials)) {
-                $user = User::with(['governate', 'educationalAdministration', 'school', 'specialization'])
-                    ->find(Auth::id());
-
-                if (!$user) {
-                    return response()->json(['message' => 'User data not found.'], 404);
-                }
-
+                $user = Auth::user(); // Get the authenticated user
                 $token = $user->createToken('future-gate')->plainTextToken;
-                return response()->json(['token' => $token, 'user' => $user], 200);
+                return response()->json(['token' => $token], 200);
             }
 
             return response()->json(['message' => 'Invalid credentials'], 401);

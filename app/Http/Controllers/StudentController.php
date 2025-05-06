@@ -165,23 +165,34 @@ class StudentController extends Controller
             }
 
             // Get the top 10 faculties matching the student's grade and specialization
-            $faculties = FacultyGrade::with(['faculty.university'])
+            $facultyGrades = FacultyGrade::with(['faculty.university'])
                 ->where('study_track', $studyTrack) // Match specialization
                 ->where('minimum_grade', '<=', $student->grade) // Match grade
                 ->orderBy('minimum_grade', 'desc') // Highest minimum_grade first
                 ->take(10)
-                ->get()
-                ->pluck('faculty') // Extract faculty objects
-                ->filter() // Remove null values (if any)
-                ->values(); // Re-index the collection
+                ->get();
 
-            if ($faculties->isEmpty()) {
+            $facultiesWithGrades = $facultyGrades->map(function ($facultyGrade) {
+                return [
+                    'id' => $facultyGrade->faculty->id,
+                    'name' => $facultyGrade->faculty->name,
+                    'university' => $facultyGrade->faculty->university,
+                    'minimum_grade' => $facultyGrade->minimum_grade,
+                    'percentage' => $facultyGrade->percentage,
+                    // Add any other faculty attributes you need
+                ];
+            });
+
+            $topThreeFaculties = $facultiesWithGrades->take(3);
+
+            if ($facultiesWithGrades->isEmpty()) {
                 return response()->json([
                     'success' => true,
                     'data' => [
                         'student' => $student->toArray(), // Convert student object to array
                         'subjects' => $student->subjects->toArray(), // Convert subjects collection to array
-                        'faculties' => []
+                        'faculties' => [],
+                        'footer_faculties' => []
                     ],
                     'message' => 'No faculties found matching the student\'s grade and specialization',
                 ], 200);
@@ -192,7 +203,8 @@ class StudentController extends Controller
                 'data' => [
                     'student' => $student->toArray(), // Convert student object to array
                     'subjects' => $student->subjects->toArray(), // Convert subjects collection to array
-                    'faculties' => $faculties
+                    'faculties' => $facultiesWithGrades,
+                    'footer_faculties' => $topThreeFaculties
                 ],
                 'message' => 'Student information and faculties retrieved successfully',
             ], 200);
@@ -242,19 +254,21 @@ class StudentController extends Controller
             }
 
             // Get the first faculty matching the student's grade and specialization
-            $faculty = FacultyGrade::with(['faculty.university'])
+            $facultyGrade = FacultyGrade::with(['faculty.university'])
                 ->where('study_track', $studyTrack) // Match specialization
                 ->where('minimum_grade', '<=', $student->grade) // Match grade
                 ->orderBy('minimum_grade', 'desc') // Highest minimum_grade first
                 ->first(); // Get the first record
 
-            if (!$faculty) {
+            if (!$facultyGrade) {
                 return response()->json([
                     'success' => true,
                     'data' => [
                         'student' => $student->toArray(), // Convert student object to array
                         'subjects' => $student->subjects->toArray(), // Convert subjects collection to array
-                        'faculty' => null // No faculty found
+                        'faculty' => null, // No faculty found
+                        'faculty_minimum_grade' => null,
+                        'faculty_percentage' => null,
                     ],
                     'message' => 'No faculty found matching the student\'s grade and specialization',
                 ], 200);
@@ -265,7 +279,9 @@ class StudentController extends Controller
                 'data' => [
                     'student' => $student->toArray(), // Convert student object to array
                     'subjects' => $student->subjects->toArray(), // Convert subjects collection to array
-                    'faculty' => $faculty->faculty // Extract the faculty object
+                    'faculty' => $facultyGrade->faculty, // Extract the faculty object
+                    'faculty_minimum_grade' => $facultyGrade->minimum_grade,
+                    'faculty_percentage' => $facultyGrade->percentage,
                 ],
                 'message' => 'Student information and nomination faculty retrieved successfully',
             ], 200);
